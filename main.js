@@ -18,15 +18,11 @@ function myFunction()
                                 console.log(response.grocery_items[0].aisle_location);                                
                                 console.log(response.grocery_items[1]);
 
-                                // var output = ' ';
                                 // for (var i = 0; i < grocery_items.length; i++) {
-                                //     if input_item === grocery_items.name[i] {
+                                //     if input_item === (response.grocery_items.name[i]) {
                                 //         console.log(grocery_items[i].aisle_location);
                                 //     }
-
-                                //     output += '<li>' + grocery_items[i].aisle_location + '</li';
                                 // }
-                                // document.getElementById('grocery_items').innerHTML = output;
                             }
                         };
                         xhttp.open("GET", "items.json", true);
