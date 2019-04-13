@@ -1,0 +1,24 @@
+{
+    "grocery_items" : [
+        {
+            "name" : "Frosted Flakes",
+            "category" : "Cereal",
+            "product_size" : "13.5 oz",
+            "price" : "$3.29",
+            "aisle_location" : "Aisle 26",
+            "vegetarian" : "True",
+            "brand" : "Kellogs",
+            "image" : "https://upload.wikimedia.org/wikipedia/en/a/af/Frosted-Flakes-Box-Small.jpg"
+        },
+        {
+            "name" : "Peanut Butter",
+            "category" : "Condiments",
+            "product_size" : "40 oz",
+            "price" : "$5.79",
+            "aisle_location" : "Aisle 11A",
+            "vegetarian" : "True",
+            "brand" : "Jif",
+            "image" : "https://target.scene7.com/is/image/Target/13292010?wid=520&hei=520&fmt=pjpeg"
+        }
+    ]
+}
