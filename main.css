@@ -21,10 +21,14 @@
   .header h1 {
     color: #fff;
     line-height: 100px; 
-    font-size: 80px;
+    font-size: 40px;
     margin-top: 0;
     margin-bottom: 40px;
     text-transform: uppercase; 
+  }
+
+  .theButton {
+    color: black;
   }
 
   header img {

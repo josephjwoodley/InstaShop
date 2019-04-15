@@ -14,8 +14,6 @@
 
 <body>
 
-    <!-- var grocery_items = []; -->
-
     <header>
         <img src="https://pbs.twimg.com/profile_images/378800000586509736/492bf1d3a276749f941eb43dd4f265b4_400x400.jpeg">
         <nav>
@@ -29,45 +27,16 @@
 
     <main class="main-container">
         <h1>
-            <p>Click the button to demonstrate the grocery list.</p>
-            <button onclick="myFunction()">Click here</button>
-            <p id="demo"></p>
+            <p>Click the button to demonstrate the Product Finder.</p>
+            <form method="GET">
+                <input type="text" name="item" id="item" />
+            </form>
 
-            <!-- <script>
-                    function myFunction()
-                    {
-                        var x;
-                        var input_item = prompt("Please enter your name Grocery item");
-        
-                        if (input_item!=null)
-                        {
-                            x = "Grocery item: " + input_item;
-                            document.getElementById("demo").innerHTML = x;
-                        }
-                    }
+            <button id="theButton">Get Aisle Location</button>
 
-                    var xhttp = new XMLHttpRequest();
-                        xhttp.onreadystatechange = function() {
-                            if (this.readyState == 4 && this.status == 200) {
-                                var response = JSON.parse(xhttp.responseText);
-                                console.log(response.grocery_items);
-                                console.log(response.grocery_items[0].aisle_location);                                
-                                console.log(response.grocery_items[1]);
+            <div id="myList">No Item Yet</div>
+            <img src="" id="theImage" />
 
-                                var output = ' ';
-                                for (var i = 0; i < grocery_items.length; i++) {
-                                    if input_item === grocery_items.name[i] {
-                                        console.log(grocery_items[i].aisle_location);
-                                    }
-
-                                    output += '<li>' + grocery_items[i].aisle_location + '</li';
-                                }
-                                document.getElementById('grocery_items').innerHTML = output;
-                            }
-                        };
-                        xhttp.open("GET", "items.json", true);
-                        xhttp.send();
-                </script> -->
         </h1>
     </main>
     <script src='./main.js'></script>

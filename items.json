@@ -1,34 +1,354 @@
 {
     "grocery_items": [
         {
-            "name": "Frosted Flakes",
-            "category": "Cereal",
-            "product_size": "61.9 oz",
-            "price": "$6.49",
-            "aisle_location": "Aisle 8B",
+            "name": "Baby Food",
+            "category": "Baby",
+            "product_size": "4 oz",
+            "price": "$1.00",
+            "aisle_location": "Aisle 23",
             "vegetarian": "True",
-            "brand": "Kellogs",
-            "image": "https://upload.wikimedia.org/wikipedia/en/a/af/Frosted-Flakes-Box-Small.jpg"
+            "brand": "Beech-Nut",
+            "image": " "
+        },
+        {
+            "name": "Bread",
+            "category": "Bakery",
+            "product_size": "20 oz",
+            "price": "$2.99",
+            "aisle_location": "Aisle 5",
+            "vegetarian": "True",
+            "brand": "Nature's Own",
+            "image": " "
+        },
+        {
+            "name": "Hamburger Buns",
+            "category": "Bakery",
+            "product_size": "12 oz",
+            "price": "$0.88",
+            "aisle_location": "Aisle 5",
+            "vegetarian": "True",
+            "brand": "Kroger",
+            "image": " "
+        },
+        {
+            "name": "Hot Dog Buns",
+            "category": "Bakery",
+            "product_size": "11 oz",
+            "price": "$0.88",
+            "aisle_location": "Aisle 5",
+            "vegetarian": "True",
+            "brand": "Kroger",
+            "image": " "
+        },
+        {
+            "name": "Corn Muffin Mix",
+            "category": "Baking Goods",
+            "product_size": "8.5 oz",
+            "price": "$0.50",
+            "aisle_location": "Aisle 14",
+            "vegetarian": "True",
+            "brand": "Jiffy",
+            "image": " "
+        },
+        {
+            "name": "Vegetable Oil",
+            "category": "Baking Goods",
+            "product_size": "48 fl oz",
+            "price": "$1.99",
+            "aisle_location": "Aisle 14",
+            "vegetarian": "True",
+            "brand": "Kroger",
+            "image": " "
+        },
+        {
+            "name": "Coca Cola",
+            "category": "Beverages",
+            "product_size": "12 cans, 12 fl oz",
+            "price": "$5.49",
+            "aisle_location": "Aisle 13",
+            "vegetarian": "True",
+            "brand": "Coca Cola",
+            "image": " "
+        },
+        {
+            "name": "Frosted Flakes",
+            "category": "Breakfast",
+            "product_size": "13.5 oz",
+            "price": "$3.29",
+            "aisle_location": "Aisle 16",
+            "vegetarian": "True",
+            "brand": "Kellogg's",
+            "image": " "
+        },
+        {
+            "name": "Fruit Loops",
+            "category": "Breakfast",
+            "product_size": "10.1 oz",
+            "price": "$3.29",
+            "aisle_location": "Aisle 16",
+            "vegetarian": "True",
+            "brand": "Kellogg's",
+            "image": " "
+        },
+        {
+            "name": "Bacon",
+            "category": "Breakfast",
+            "product_size": "16 oz",
+            "price": "$3.99",
+            "aisle_location": "Meat",
+            "vegetarian": "False",
+            "brand": "Smithfield",
+            "image": " "
+        },
+        {
+            "name": "Cream of Chicken Soup",
+            "category": "Canned & Packaged",
+            "product_size": "10.5 oz",
+            "price": "$0.99",
+            "aisle_location": "Aisle 10",
+            "vegetarian": "False",
+            "brand": "Campbell's",
+            "image": " "
+        },
+        {
+            "name": "Tuna",
+            "category": "Canned & Packaged",
+            "product_size": "5 oz",
+            "price": "$1.29",
+            "aisle_location": "Aisle 6",
+            "vegetarian": "False",
+            "brand": "StarKist",
+            "image": " "
+        },
+        {
+            "name": "Green Beans",
+            "category": "Canned & Packaged",
+            "product_size": "14.5 oz",
+            "price": "$0.99",
+            "aisle_location": "Aisle 10",
+            "vegetarian": "True",
+            "brand": "Green Giant",
+            "image": " "
+        },
+        {
+            "name": "Corn",
+            "category": "Canned & Packaged",
+            "product_size": "15.25 oz",
+            "price": "$0.99",
+            "aisle_location": "Aisle 10",
+            "vegetarian": "True",
+            "brand": "Green Giant",
+            "image": " "
+        },
+        {
+            "name": "Macaroni and Cheese",
+            "category": "Canned & Packaged",
+            "product_size": "7.25 oz",
+            "price": "$1.00",
+            "aisle_location": "Aisle 8",
+            "vegetarian": "True",
+            "brand": "Kraft",
+            "image": " "
         },
         {
             "name": "Peanut Butter",
-            "category": "Condiments",
-            "product_size": "40 oz",
-            "price": "$5.79",
-            "aisle_location": "Aisle 11A",
+            "category": "Condiments & Sauces",
+            "product_size": "16 oz",
+            "price": "$2.49",
+            "aisle_location": "Aisle 20",
             "vegetarian": "True",
             "brand": "Jif",
-            "image": "https://target.scene7.com/is/image/Target/13292010?wid=520&hei=520&fmt=pjpeg"
+            "image": " "
         },
         {
-            "name": "Butter",
-            "category": "Condiments",
-            "product_size": "1 lb",
-            "price": "$3.49",
-            "aisle_location": "Dairy",
+            "name": "Barbecue Sauce",
+            "category": "Condiments & Sauces",
+            "product_size": "18 oz",
+            "price": "$1.49",
+            "aisle_location": "Aisle 4",
             "vegetarian": "True",
-            "brand": "Land o Lakes",
-            "image": "https://scontent.harristeeter.com/legacy/productimagesroot/DJ/4/1002354.jpg"
+            "brand": "Sweet Baby Ray's",
+            "image": " "
+        },
+        {
+            "name": "Mayonnaise",
+            "category": "Condiments & Sauces",
+            "product_size": "30 fl oz",
+            "price": "$3.49",
+            "aisle_location": "Aisle 4",
+            "vegetarian": "True",
+            "brand": "Hellmann's",
+            "image": " "
+        },
+        {
+            "name": "Ketchup",
+            "category": "Condiments & Sauces",
+            "product_size": "38 oz",
+            "price": "$3.49",
+            "aisle_location": "Aisle 4",
+            "vegetarian": "True",
+            "brand": "Heinz",
+            "image": " "
+        },
+        {
+            "name": "Ranch",
+            "category": "Condiments & Sauces",
+            "product_size": "16 oz",
+            "price": "$2.79",
+            "aisle_location": "Aisle 4",
+            "vegetarian": "True",
+            "brand": "Hidden Valley",
+            "image": " "
+        },
+        {
+            "name": "Mustard",
+            "category": "Condiments & Sauces",
+            "product_size": "14 oz",
+            "price": "$1.49",
+            "aisle_location": "Aisle 4",
+            "vegetarian": "True",
+            "brand": "French's",
+            "image": " "
+        },
+        {
+            "name": "Milk",
+            "category": "Dairy",
+            "product_size": "1 gal",
+            "price": "$2.19",
+            "aisle_location": "Aisle 32",
+            "vegetarian": "True",
+            "brand": "Kroger",
+            "image": " "
+        },
+        {
+            "name": "Eggs",
+            "category": "Dairy",
+            "product_size": "18 ct",
+            "price": "$0.99",
+            "aisle_location": "Aisle 30",
+            "vegetarian": "True",
+            "brand": "Kroger",
+            "image": " "
+        },
+        {
+            "name": "Yogurt",
+            "category": "Dairy",
+            "product_size": "6 oz",
+            "price": "$0.60",
+            "aisle_location": "Aisle 32",
+            "vegetarian": "True",
+            "brand": "Yoplait",
+            "image": " "
+        },
+        {
+            "name": "Cheese Slices",
+            "category": "Dairy",
+            "product_size": "12 oz",
+            "price": "$3.39",
+            "aisle_location": "Aisle 30",
+            "vegetarian": "True",
+            "brand": "Kraft",
+            "image": " "
+        },
+        {
+            "name": "Sour Cream",
+            "category": "Dairy",
+            "product_size": "16 oz",
+            "price": "$2.29",
+            "aisle_location": "Aisle 32",
+            "vegetarian": "True",
+            "brand": "Daisy",
+            "image": " "
+        },
+        {
+            "name": "Pizza Rolls",
+            "category": "Frozen",
+            "product_size": "50 ct",
+            "price": "$4.29",
+            "aisle_location": "Aisle 29",
+            "vegetarian": "False",
+            "brand": "Totino's",
+            "image": " "
+        },
+        {
+            "name": "Tortillas",
+            "category": "International",
+            "product_size": "17.5 oz",
+            "price": "$2.14",
+            "aisle_location": "Front of Store",
+            "vegetarian": "True",
+            "brand": "Mission",
+            "image": " "
+        },
+        {
+            "name": "Taco Seasoning",
+            "category": "International",
+            "product_size": "1 oz",
+            "price": "$0.89",
+            "aisle_location": "Front of Store",
+            "vegetarian": "False",
+            "brand": "Old El Paso",
+            "image": " "
+        },
+        {
+            "name": "Lunchable",
+            "category": "International",
+            "product_size": "3.5 oz",
+            "price": "$1.00",
+            "aisle_location": "Meat",
+            "vegetarian": "False",
+            "brand": "Lunchables",
+            "image": " "
+        },
+        {
+            "name": "Popcorn",
+            "category": "Natural & Organic",
+            "product_size": "4.4 oz",
+            "price": "$2.50",
+            "aisle_location": "Aisle 9",
+            "vegetarian": "True",
+            "brand": "Skinny Pop",
+            "image": " "
+        },
+        {
+            "name": "Spaghetti",
+            "category": "Pasta, Sauces, Grain",
+            "product_size": "1 lb",
+            "price": "$1.00",
+            "aisle_location": "Aisle 6",
+            "vegetarian": "True",
+            "brand": "Barilla",
+            "image": " "
+        },
+        {
+            "name": "Toothpaste",
+            "category": "Personal Care",
+            "product_size": "6.4 oz",
+            "price": "$1.49",
+            "aisle_location": "Aisle 23",
+            "vegetarian": "True",
+            "brand": "Crest",
+            "image": " "
+        },
+        {
+            "name": "Baby Spinach",
+            "category": "Produce",
+            "product_size": "5 oz",
+            "price": "$3.49",
+            "aisle_location": "Produce",
+            "vegetarian": "True",
+            "brand": "Simple Truth",
+            "image": " "
+        },
+        {
+            "name": "Crackers",
+            "category": "Snacks",
+            "product_size": "13.7 oz",
+            "price": "$2.49",
+            "aisle_location": "Aisle 7",
+            "vegetarian": "True",
+            "brand": "Ritz",
+            "image": " "
         }
     ]
 }
