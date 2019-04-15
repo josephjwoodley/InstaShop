@@ -10,6 +10,7 @@ function myFunction() {
         // console.log(item);
         if (this.readyState == 4 && this.status == 200) {
             var response = JSON.parse(xhttp.responseText);
+            console.log(response.grocery_items);
             for (var i = 0; i < response.grocery_items.length; i++) {
                 if ((response.grocery_items[i].name) == item) {
                     var results = (response.grocery_items[i].aisle_location);
