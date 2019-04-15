@@ -13,7 +13,6 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
 <body>
-
     <header>
         <img src="https://pbs.twimg.com/profile_images/378800000586509736/492bf1d3a276749f941eb43dd4f265b4_400x400.jpeg">
         <nav>
@@ -27,6 +26,15 @@
 
     <main class="main-container">
         <h1>
+
+            <p>This SELECT Dropdown list is filed using JSON data from an external file!</p>
+
+            <select id="theSelect" onchange="show(this)">
+                <option value=" ">-- Select --</option>
+            </select>
+
+            <p id="msg"></p>
+
             <p>Click the button to demonstrate the Product Finder.</p>
             <form method="GET">
                 <input type="text" name="item" id="item" />
@@ -35,7 +43,7 @@
             <button id="theButton">Get Aisle Location</button>
 
             <div id="myList">No Item Yet</div>
-            <img src="" id="theImage" />
+            <img src=" " id="theImage" />
 
         </h1>
     </main>
