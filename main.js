@@ -30,29 +30,55 @@ function show(ele) {
     // GET THE SELECTED VALUE FROM <select> ELEMENT AND SHOW IT.
     var msg = document.getElementById('msg');
     msg.innerHTML = 'Selected Item: <b>' + ele.options[ele.selectedIndex].text;
-}
 
-document.getElementById('theButton').addEventListener('click', myFunction)
+    document.getElementById('theButton').addEventListener('click', myFunction)
 
-function myFunction() {
-    let item = document.getElementById("item").value
-    // console.log(item);
-
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
+    function myFunction() {
+        let item = document.getElementById("msg").value
+        // let item = document.getElementById("item");
         // console.log(item);
-        if (this.readyState == 4 && this.status == 200) {
-            var response = JSON.parse(xhttp.responseText);
-            console.log(response.grocery_items);
-            for (var i = 0; i < response.grocery_items.length; i++) {
-                if ((response.grocery_items[i].name) == item) {
-                    var results = (response.grocery_items[i].aisle_location);
-                    console.log(results);
-                    document.getElementById('myList').innerHTML = results;
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            console.log(item);
+            if (this.readyState == 4 && this.status == 200) {
+                var response = JSON.parse(xhttp.responseText);
+                console.log(response.grocery_items);
+                for (var i = 0; i < response.grocery_items.length; i++) {
+                    if ((response.grocery_items[i].name) == item) {
+                        var results = (response.grocery_items[i].aisle_location);
+                        console.log(results);
+                        document.getElementById('myList').innerHTML = results;
+                    }
                 }
             }
         }
+        xhttp.open("GET", "items.json", true);
+        xhttp.send();
     }
-    xhttp.open("GET", "items.json", true);
-    xhttp.send();
 }
+
+// document.getElementById('theButton').addEventListener('click', myFunction)
+
+// function myFunction() {
+//     let item = document.getElementById("item").value
+//     // console.log(item);
+
+//     var xhttp = new XMLHttpRequest();
+//     xhttp.onreadystatechange = function () {
+//         // console.log(item);
+//         if (this.readyState == 4 && this.status == 200) {
+//             var response = JSON.parse(xhttp.responseText);
+//             console.log(response.grocery_items);
+//             for (var i = 0; i < response.grocery_items.length; i++) {
+//                 if ((response.grocery_items[i].name) == item) {
+//                     var results = (response.grocery_items[i].aisle_location);
+//                     console.log(results);
+//                     document.getElementById('myList').innerHTML = results;
+//                 }
+//             }
+//         }
+//     }
+//     xhttp.open("GET", "items.json", true);
+//     xhttp.send();
+// }
