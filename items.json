@@ -349,6 +349,16 @@
             "vegetarian": "True",
             "brand": "Ritz",
             "image": " "
+        },
+        {
+            "name": "Bread Crumbs",
+            "category": "Bakery",
+            "product_size": "15 oz",
+            "price": "$2.49",
+            "aisle_location": "Aisle 14",
+            "vegetarian": "True",
+            "brand": "Progresso",
+            "image": " "
         }
     ]
 }

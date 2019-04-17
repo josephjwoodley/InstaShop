@@ -1,25 +1,25 @@
 window.onload = populateSelect();
 
 function populateSelect() {
-
     // CREATE AN XMLHttpRequest OBJECT, WITH GET METHOD.
     var xhr = new XMLHttpRequest(),
-        method = 'GET',
-        overrideMimeType = 'application/json',
-        url = "items.json";        // ADD THE URL OF THE FILE.
+        method = "GET",
+        overrideMimeType = "application/json",
+        url = "items.json"; // ADD THE URL OF THE FILE.
 
     xhr.onreadystatechange = function () {
-
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-            console.log('populateSelect ran');
             // PARSE JSON DATA.
             var theList = JSON.parse(xhr.responseText);
 
-            var ele = document.getElementById('theSelect');
+            var ele = document.getElementById("theSelect");
             for (var i = 0; i < theList.grocery_items.length; i++) {
                 // BIND DATA TO <select> ELEMENT.
-                ele.innerHTML = ele.innerHTML +
-                    '<option value=>' + theList.grocery_items[i].name + '</option>';
+                ele.innerHTML =
+                    ele.innerHTML +
+                    "<option value=>" +
+                    theList.grocery_items[i].name +
+                    "</option>";
                 console.log(i);
             }
         }
@@ -30,29 +30,19 @@ function populateSelect() {
 
 function show(ele) {
     // GET THE SELECTED VALUE FROM <select> ELEMENT AND SHOW IT.
-    var msg = document.getElementById('msg');
-    msg.innerHTML = 'Selected Item: <b>' + ele.options[ele.selectedIndex].text;
-
-    // document.getElementById('theButton').addEventListener('click', myFunction)
+    var msg = document.getElementById("msg");
+    msg.innerHTML = "Selected Item: <b>" + ele.options[ele.selectedIndex].text;
 
     function myFunction() {
-
-        console.log('I was triggered');
-        console.log(ele.options[ele.selectedIndex].text);
-        // let item = document.getElementById("msg").value
         let item = ele.options[ele.selectedIndex].text;
-        console.log(item);
 
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
-            console.log(item);
             if (this.readyState == 4 && this.status == 200) {
                 var response = JSON.parse(xhttp.responseText);
-                console.log(response.grocery_items);
                 for (var i = 0; i < response.grocery_items.length; i++) {
                     if ((response.grocery_items[i].name) == item) {
                         var results = (response.grocery_items[i].aisle_location);
-                        console.log(results);
                         document.getElementById('myList').innerHTML = results;
                     }
                 }
@@ -64,27 +54,23 @@ function show(ele) {
     myFunction();
 }
 
-document.getElementById('theButton').addEventListener('click', myFunction2)
+// document.getElementById('theButton').addEventListener('click', myFunction2)
 
-function myFunction2() {
-    let item = document.getElementById("item").value
-    // console.log(item);
+// function myFunction2() {
+//     let item = document.getElementById("item").value
 
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        // console.log(item);
-        if (this.readyState == 4 && this.status == 200) {
-            var response = JSON.parse(xhttp.responseText);
-            console.log(response.grocery_items);
-            for (var i = 0; i < response.grocery_items.length; i++) {
-                if ((response.grocery_items[i].name) == item) {
-                    var results = (response.grocery_items[i].aisle_location);
-                    console.log(results);
-                    document.getElementById('myList').innerHTML = results;
-                }
-            }
-        }
-    }
-    xhttp.open("GET", "items.json", true);
-    xhttp.send();
-}
+//     var xhttp = new XMLHttpRequest();
+//     xhttp.onreadystatechange = function () {
+//         if (this.readyState == 4 && this.status == 200) {
+//             var response = JSON.parse(xhttp.responseText);
+//             for (var i = 0; i < response.grocery_items.length; i++) {
+//                 if ((response.grocery_items[i].name) == item) {
+//                     var results = (response.grocery_items[i].aisle_location);
+//                     document.getElementById('myList').innerHTML = results;
+//                 }
+//             }
+//         }
+//     }
+//     xhttp.open("GET", "items.json", true);
+//     xhttp.send();
+// }

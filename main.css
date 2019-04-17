@@ -35,6 +35,13 @@
     color: black;
   }
 
+ .theImage {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+
   header img {
     height: 80px;
     margin-left: 40px;
