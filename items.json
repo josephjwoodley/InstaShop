@@ -359,6 +359,56 @@
             "vegetarian": "True",
             "brand": "Progresso",
             "image": " "
+        },
+        {
+            "name": "Toothpicks",
+            "category": "Paper & Plastics",
+            "product_size": "750 count",
+            "price": "$0.95",
+            "aisle_location": "Aisle 20",
+            "vegetarian": "True",
+            "brand": "Diamond",
+            "image": " "
+        },
+        {
+            "name": "Coconut Milk",
+            "category": "International",
+            "product_size": "13.5 fl oz",
+            "price": "$2.19",
+            "aisle_location": "Aisle 8",
+            "vegetarian": "True",
+            "brand": "Goya",
+            "image": " "
+        },
+        {
+            "name": "Sun Dried Tomatos",
+            "category": "Canned & Packaged",
+            "product_size": "3 oz",
+            "price": "$2.49",
+            "aisle_location": "Produce",
+            "vegetarian": "True",
+            "brand": "California Sun-Dry",
+            "image": " "
+        },
+        {
+            "name": "Pimentos",
+            "category": "Canned & Packaged",
+            "product_size": "7 oz",
+            "price": "$1.99",
+            "aisle_location": "Aisle 10",
+            "vegetarian": "True",
+            "brand": "Kroger",
+            "image": " "
+        },
+        {
+            "name": "Hummus",
+            "category": "Deli",
+            "product_size": "10 oz",
+            "price": "$3.99",
+            "aisle_location": "Deli",
+            "vegetarian": "True",
+            "brand": "Sabra",
+            "image": " "
         }
     ]
 }
