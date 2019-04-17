@@ -1,4 +1,4 @@
-window.onload = populateSelect();
+window.onload = populateSelect;
 
 function populateSelect() {
     // CREATE AN XMLHttpRequest OBJECT, WITH GET METHOD.
@@ -11,6 +11,7 @@ function populateSelect() {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
             // PARSE JSON DATA.
             var theList = JSON.parse(xhr.responseText);
+            console.log('inside if statement inside populateSelect');
 
             var ele = document.getElementById("theSelect");
             for (var i = 0; i < theList.grocery_items.length; i++) {
@@ -39,11 +40,12 @@ function show(ele) {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
+                console.log('inside if statement inside show');
                 var response = JSON.parse(xhttp.responseText);
                 for (var i = 0; i < response.grocery_items.length; i++) {
                     if ((response.grocery_items[i].name) == item) {
                         var results = (response.grocery_items[i].aisle_location);
-                        document.getElementById('myList').innerHTML = results;
+                        document.getElementById("myList").innerHTML = results;
                     }
                 }
             }
@@ -66,7 +68,8 @@ function show(ele) {
 //             for (var i = 0; i < response.grocery_items.length; i++) {
 //                 if ((response.grocery_items[i].name) == item) {
 //                     var results = (response.grocery_items[i].aisle_location);
-//                     document.getElementById('myList').innerHTML = results;
+//                     console.log(results);
+//                     document.getElementById("myList").innerHTML = results;
 //                 }
 //             }
 //         }
@@ -74,3 +77,4 @@ function show(ele) {
 //     xhttp.open("GET", "items.json", true);
 //     xhttp.send();
 // }
+

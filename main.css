@@ -36,10 +36,10 @@
   }
 
  .theImage {
-    border: 1px solid #ddd;
+    border: 20px solid black;
     border-radius: 4px;
-    padding: 5px;
-    width: 150px;
+    padding: 20px;
+    width: 300px;
   }
 
   header img {
