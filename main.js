@@ -44,8 +44,11 @@ function show(ele) {
                 var response = JSON.parse(xhttp.responseText);
                 for (var i = 0; i < response.grocery_items.length; i++) {
                     if ((response.grocery_items[i].name) == item) {
+                        //var results = (response.grocery_items[i].aisle_location);
                         var results = (response.grocery_items[i].aisle_location);
+                        var results2 = (response.grocery_items[i].price);
                         document.getElementById("myList").innerHTML = results;
+                        document.getElementById("myList2").innerHTML = results2;
                     }
                 }
             }
